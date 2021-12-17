@@ -3,7 +3,7 @@ import { Application } from "https://deno.land/x/oak@v9.0.1/mod.ts";
 const app = new Application();
 app.use((context, next) => {
     const data = { 
-        site: "Kaitsun luentodemo", 
+        site: "ˁ˚ᴥ˚ˀ Monika on IhQ!! ˁ˚ᴥ˚ˀ", 
         data: { method: context.request.method, path: context.request.path 
         },
     };
