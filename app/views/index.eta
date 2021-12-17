@@ -1,8 +1,8 @@
 <% layout("./layouts/layout.eta") %>
 
-<h3>Todos</h3>
+<h3>Lahjatoiveet-lista</h3>
 
 <form method="POST" action="/collections">
-    <input type="text" name="task" />
-    <input type="submit" value="Add todo!">
+    <input type="text" name="lisaaToive" />
+    <input type="submit" value="Lisää lahjatoive">
 </form>
