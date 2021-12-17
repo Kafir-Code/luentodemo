@@ -3,7 +3,7 @@ import { Application } from "https://deno.land/x/oak@v9.0.1/mod.ts";
 const app = new Application();
 app.use(({ request }, next) => {
     const data = { 
-        site: "( ͡° ͜ʖ ͡°) Perjantai...", 
+        site: "( ͡° ͜ʖ ͡°) '..Toss a coin to your witcher..'", 
         data: { 
             //method: request.method, 
             path: request.url.pathname,
