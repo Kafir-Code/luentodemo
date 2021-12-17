@@ -1,5 +1,12 @@
 import { Application } from "https://deno.land/x/oak@v9.0.1/mod.ts";
+import { router } from "./routes/routes.js";
+import * as middlewares from "./middlewares/middlewares.js";
 
+const app = new Application();
+app.use(middlewares.monitoringMiddleware);
+app.use(middlewares.renderMiddleware);
+app.use(router.routes());
+/*
 const app = new Application();
 app.use(({ request }, next) => {
     const data = { 
@@ -24,5 +31,5 @@ app.use(({ request }, next) => {
 app.use((context, next) => {
     context.response.body = "Arto, täähän toimii! :o - Koska syödään??";
 });
-
+*/
 export { app };

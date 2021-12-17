@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+    <head>
+        <title>MINIPROJEKTI</title>
+    </head>
+    <body>
+        <h1>Lahjalista</h1>
+
+        <%~ it.body %>
+
+    </body>
+</html>
+
