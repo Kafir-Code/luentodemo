@@ -8,7 +8,7 @@ app.use((context, next) => {
         },
     };
     
-    fetch("https://pyttipannu.deno.dev/", {
+    fetch("https://deno-simple-monitoring.herokuapp.com/api/entries", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
