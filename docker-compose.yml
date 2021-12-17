@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  app:
+    build: app
+    image: app
+    restart: unless-stopped
+    volumes:
+      - ./app/:/app
+    ports:
+      - 3000:3000
