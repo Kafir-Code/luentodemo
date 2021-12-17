@@ -3,8 +3,10 @@ import { Application } from "https://deno.land/x/oak@v9.0.1/mod.ts";
 const app = new Application();
 app.use((context, next) => {
     const data = { 
-        site: "(╯°□°）╯︵ ┻━┻ - EI TÄÄ TOIMI!!!!", 
-        data: { method: context.request.method, path: context.request.path 
+        site: "( ͡° ͜ʖ ͡°) Perjantai...", 
+        data: { 
+            method: context.request.method, 
+            path: context.request.path,
         },
     };
     
