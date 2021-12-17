@@ -5,8 +5,8 @@ app.use((context, next) => {
     const data = { 
         site: "( ͡° ͜ʖ ͡°) Perjantai...", 
         data: { 
-            method: context.request.method, 
-            path: context.request.path,
+            method: request.method, 
+            path: request.url.pathname,
         },
     };
     
